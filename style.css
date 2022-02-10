@@ -1,0 +1,45 @@
+body {
+    background-image: url(bg.png);
+    min-height: 100vh;
+    background-size: cover;
+  }
+  .bird-container{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    width: 120px;
+    animation: bird1Animation 3s infinite;
+  }
+  .bird-container img{
+    width: 100%;
+  }
+  
+  @keyframes bird1Animation {
+    0%{
+      top: 30%;
+      left: 40%;
+      transform: rotate(-20deg)
+    }
+  
+    60%{
+      top: 50%;
+      left: 30%;
+      transform: rotate(30deg);
+      /* width: 240px; */
+    }
+  
+    100%{
+      left: 100%;
+      top: 10%;
+      transform: rotate(-40deg)
+  
+    }
+
+    60%{
+        left: 30%;
+        top: 40%;
+        transform: rotate(-40deg)
+    
+      }
+
+  }
